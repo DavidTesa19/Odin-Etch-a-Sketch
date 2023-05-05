@@ -14,17 +14,42 @@
     </div>
     <div class="container">
         <div class="menu">
-            <button class="grid-size">8</button>
-            <button class="grid-size">16</button>
-            <button class="grid-size">32</button>
-            <button class="grid-size">64</button>
-            <button class="grid-size">128</button>
-            <button class="brush one">1</button>
-            <button class="brush three">3</button>
-            <button class="eraser">eraser</button>
+            <h2>Canvas Size</h2>
+            <div class="canvas-size">
+                <button class="grid-size">8</button>
+                <button class="grid-size">16</button>
+                <button class="grid-size">32</button>
+                <button class="grid-size">64</button>
+                <button class="grid-size">128</button>
+
+            </div>
+            
+            <div class="brush-size">
+                <h3>Brush Size</h3>
+                <button class="brush one">1</button>
+                <button class="brush three">3</button>
+                
+            </div>
             <button class="brushButton">brush</button>
+            <button class="rainbow">rainbow</button>
+            <button class="eraser">eraser</button>
+            <h2>Brush hardness</h2>
             <button class="hard">hard</button>
             <button class="soft">soft</button>
+            <div class="brushColor-container">
+                <div class="brushColor"></div>
+                <div class="brushColor two"></div>
+                <div class="brushColor three"></div>
+                <div class="brushColor four"></div>
+                <div class="brushColor five"></div>
+
+            </div>
+            <div class="sliderContainer">
+                <input type="range" min="1" max="360" value="180" id="hue" class="slider"></input>
+                <input type="range" min="1" max="100" value="50" id="saturation" class="slider"></input>
+                <input type="range" min="1" max="100" value="50" id="lightness" class="slider"></input>
+            </div>
+            
         </div>
         <div class="frame">
             <div class="sketcher"></div>
